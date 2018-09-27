@@ -5,7 +5,9 @@
 
 # imports:
 import os
-from termcolor import colored
+import logging
+import time
+from logging.handlers import RotatingFileHandler
 
 
 # constants:
@@ -17,31 +19,34 @@ from termcolor import colored
 
 def run_tree_check():
     option_max_deep = 2
+    option_exploration = os.getcwd()
 
-    set_new_tree(os.getcwd(), 0, option_max_deep)
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    formatter = logging.Formatter('%(asctime)s :: %(levelname)s :: %(message)s')
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.DEBUG)
+    logger.addHandler(stream_handler)
+    file_handler = RotatingFileHandler('activity.log', 'w', 1000000, 1)
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
-    print()
-    print()
+    set_new_tree(option_exploration, 0, option_max_deep)
 
-    if (open('.test.txt', 'r')).read() == (open('test.txt', 'r')).read():
-        print(colored('##############', 'green'))
-        print(colored('Same file tree', 'green'))
-        print(colored('##############', 'green'))
-    else:
-        print(colored('##############', 'red'))
-        print(colored('File tree has change', 'red'))
-        print(colored('##############', 'red'))
+    if (open('.tree.txt', 'r')).read() != (open('tree.txt', 'r')).read():
+        logger.info('File tree has change')
 
-        for added_file in get_diff(((open('.test.txt', 'r')).read()).split(';'), ((open('test.txt', 'r')).read()).split(';')):
-            print(colored(' + : '+added_file, 'green'))
+        for added_file in get_diff(((open('.tree.txt', 'r')).read()).split(';'), ((open('tree.txt', 'r')).read()).split(';')):
+            logger.info('+ : '+added_file)
 
-        for removed_file in get_diff(((open('test.txt', 'r')).read()).split(';'), ((open('.test.txt', 'r')).read()).split(';')):
-            print(colored(' - : '+removed_file, 'red'))
+        for removed_file in get_diff(((open('tree.txt', 'r')).read()).split(';'), ((open('.tree.txt', 'r')).read()).split(';')):
+            logger.info('- : '+removed_file)
 
-        os.remove('test.txt')
-        (open('test.txt', 'w')).write((open('.test.txt', 'r').read()))
+        os.remove('tree.txt')
+        (open('tree.txt', 'w')).write((open('.tree.txt', 'r').read()))
 
-    os.remove('.test.txt')
+    os.remove('.tree.txt')
 
 
 def set_new_tree(curDir: str, deep: int, max_deep: int):
@@ -50,20 +55,15 @@ def set_new_tree(curDir: str, deep: int, max_deep: int):
         for i in range(0, deep):
             deep_separator += "-"
 
-        if deep == 0:
-            print(colored('Actual position : ' + curDir, 'red'))
-
         with os.scandir(curDir) as it:
             for entry in it:
-                f = open('.test.txt', 'a')
+                f = open('.tree.txt', 'a')
                 if not entry.name.startswith('.'):
                     if entry.is_dir():
-                        print(colored(deep_separator + entry.name, 'blue'))
                         f.write(deep_separator + entry.name + ';')
                         f.close()
                         set_new_tree(curDir + "/" + entry.name, 1 + deep, max_deep)
                     else:
-                        print(colored(deep_separator + entry.name, 'green'))
                         f.write(deep_separator + entry.name + ';')
                         f.close()
 
@@ -83,4 +83,7 @@ def get_diff(tree1: [], tree2: []):
 if __name__ == "__main__":
     """
     """
-    run_tree_check()
+    open('tree.txt', 'w')
+    for i in range(0, 10):
+        run_tree_check()
+        time.sleep(15)
