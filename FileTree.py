@@ -17,20 +17,7 @@ from logging.handlers import RotatingFileHandler
 #
 # ----------------------------
 
-def run_tree_check():
-    option_max_deep = 2
-    option_exploration = os.getcwd()
-
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s :: %(levelname)s :: %(message)s')
-    stream_handler = logging.StreamHandler()
-    stream_handler.setLevel(logging.DEBUG)
-    logger.addHandler(stream_handler)
-    file_handler = RotatingFileHandler('activity.log', 'w', 1000000, 1)
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
+def run_tree_check(logger: logging.RootLogger, option_max_deep: int, option_exploration: str):
 
     set_new_tree(option_exploration, 0, option_max_deep)
 
@@ -84,6 +71,17 @@ if __name__ == "__main__":
     """
     """
     open('tree.txt', 'w')
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    formatter = logging.Formatter('%(asctime)s :: %(levelname)s :: %(message)s')
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.DEBUG)
+    logger.addHandler(stream_handler)
+    file_handler = RotatingFileHandler('activity.log', 'w', 1000000, 1)
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
     for i in range(0, 10):
-        run_tree_check()
+        run_tree_check(logger, 2, os.getcwd())
         time.sleep(15)

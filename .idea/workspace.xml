@@ -9,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Team_Babwe$FileTree.coverage" NAME="FileTree Coverage Results" MODIFIED="1538053364533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Team_Babwe$FileTree.coverage" NAME="FileTree Coverage Results" MODIFIED="1538054638429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Team_Babwe$TestLibraries.coverage" NAME="TestLibraries Coverage Results" MODIFIED="1538049460924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -37,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2509" />
+          <entry key="py" value="2654" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2509" />
+          <entry key="Python" value="2654" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -67,12 +67,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FileTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+            <state relative-caret-position="434">
+              <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
               <folding>
                 <element signature="e#124#133#0" expanded="true" />
-                <marker date="1538053362377" expanded="true" signature="337:1520" ph="..." />
-                <marker date="1538053362377" expanded="true" signature="2248:2379" ph="..." />
+                <marker date="1538054685928" expanded="true" signature="410:1066" ph="..." />
+                <marker date="1538054685928" expanded="true" signature="1794:1925" ph="..." />
               </folding>
             </state>
           </provider>
@@ -233,8 +233,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48590022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -307,12 +307,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FileTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+        <state relative-caret-position="434">
+          <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
           <folding>
             <element signature="e#124#133#0" expanded="true" />
-            <marker date="1538053362377" expanded="true" signature="337:1520" ph="..." />
-            <marker date="1538053362377" expanded="true" signature="2248:2379" ph="..." />
+            <marker date="1538054685928" expanded="true" signature="410:1066" ph="..." />
+            <marker date="1538054685928" expanded="true" signature="1794:1925" ph="..." />
           </folding>
         </state>
       </provider>
