@@ -38,20 +38,16 @@ def run_tree_check(logger: logging.RootLogger, option_max_deep: int, option_expl
 
 def set_new_tree(curDir: str, deep: int, max_deep: int):
     if deep != max_deep:
-        deep_separator = ""
-        for i in range(0, deep):
-            deep_separator += "-"
-
         with os.scandir(curDir) as it:
             for entry in it:
                 f = open('.tree.txt', 'a')
                 if not entry.name.startswith('.'):
                     if entry.is_dir():
-                        f.write(deep_separator + entry.name + ';')
+                        f.write(curDir + entry.name + ';')
                         f.close()
                         set_new_tree(curDir + "/" + entry.name, 1 + deep, max_deep)
                     else:
-                        f.write(deep_separator + entry.name + ';')
+                        f.write(curDir + entry.name + ';')
                         f.close()
 
 
@@ -61,6 +57,7 @@ def get_diff(tree1: [], tree2: []):
         if file not in tree2:
             file_diff.append(file)
     return file_diff
+
 
 
 # ----------------------------
