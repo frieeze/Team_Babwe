@@ -43,11 +43,17 @@ def set_new_tree(curDir: str, deep: int, max_deep: int):
                 f = open('.tree.txt', 'a')
                 if not entry.name.startswith('.'):
                     if entry.is_dir():
-                        f.write(curDir + entry.name + ';')
-                        f.close()
-                        set_new_tree(curDir + "/" + entry.name, 1 + deep, max_deep)
+                        if curDir.startswith('./') :
+                            f.write(curDir+ entry.name + ';')
+                            f.close()
+                            set_new_tree(curDir + entry.name, 1 + deep, max_deep)
+                        else:
+                            f.write(curDir + "/" + entry.name + ';')
+                            f.close()
+                            set_new_tree(curDir + "/" + entry.name, 1 + deep, max_deep)
+
                     else:
-                        f.write(curDir + entry.name + ';')
+                        f.write(curDir + "/" + entry.name + ';')
                         f.close()
 
 

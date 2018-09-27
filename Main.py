@@ -1,6 +1,7 @@
 import begin
 import logging
 import FileTree
+import CheckTime
 import time
 from logging.handlers import RotatingFileHandler
 
@@ -24,4 +25,5 @@ def run(folder, logger, refresh_time=15, option_max_deep=5, debug_mode=False):
     i = 0
     while i==0:
         FileTree.run_tree_check(logger, option_max_deep, folder)
+        CheckTime.modification_checker(logger)
         time.sleep(refresh_time)
