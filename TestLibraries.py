@@ -7,6 +7,8 @@
 import os
 import sys
 import argparse
+import time
+
 from termcolor import colored
 import logging
 from logging.handlers import RotatingFileHandler
@@ -99,17 +101,9 @@ if __name__ == "__main__":
     """
     """
     print(sys.version)
-    test_os_library(os.getcwd(), 0)
-
-    if (open('.test.txt', 'r')).read() == (open('test.txt', 'r')).read():
-        print(colored('##############', 'green'))
-        print(colored('Same file tree', 'green'))
-        print(colored('##############', 'green'))
-    else:
-        print(colored('##############', 'red'))
-        print(colored('File tree has change', 'red'))
-        print(colored('##############', 'red'))
-        (open('test.txt', 'w')).write((open('.test.txt', 'r').read()))
-    os.remove('.test.txt')
+    #test_os_library(os.getcwd(), 0)
     # test_logging_library()
     # test_file()
+    for i in range(0,10):
+        print(i)
+        time.sleep(3)
