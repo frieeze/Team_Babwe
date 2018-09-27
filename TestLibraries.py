@@ -8,6 +8,8 @@ import os
 import sys
 import begin
 import argparse
+import time
+
 from termcolor import colored
 import logging
 from logging.handlers import RotatingFileHandler
@@ -102,6 +104,7 @@ def run(log_file, refresh_time=15, max_deep=5, debug_mode=False):
     """
     """
     print(sys.version)
+<<<<<<< HEAD
     test_os_library(os.getcwd(), 0)
 
     if (open('.test.txt', 'r')).read() == (open('test.txt', 'r')).read():
@@ -149,3 +152,11 @@ def run(log_file, refresh_time=15, max_deep=5, debug_mode=False):
     logger.info('Hello')
     logger.warning('Testing %s', 'foo')
 
+=======
+    #test_os_library(os.getcwd(), 0)
+    # test_logging_library()
+    # test_file()
+    for i in range(0,10):
+        print(i)
+        time.sleep(3)
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60

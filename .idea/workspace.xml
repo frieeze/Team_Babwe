@@ -9,8 +9,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Team_Babwe$FileTree.coverage" NAME="FileTree Coverage Results" MODIFIED="1537728423514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Team_Babwe$TestLibraries.coverage" NAME="TestLibraries Coverage Results" MODIFIED="1537551523424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Team_Babwe$FileTree.coverage" NAME="FileTree Coverage Results" MODIFIED="1538054638429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Team_Babwe$TestLibraries.coverage" NAME="TestLibraries Coverage Results" MODIFIED="1538049460924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="692680689">
@@ -20,8 +20,9 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2195" />
+          <entry key="py" value="2654" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2195" />
+          <entry key="Python" value="2654" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -81,10 +82,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestLibraries.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-31">
               <caret line="98" selection-start-line="98" selection-end-line="103" selection-end-column="22" />
               <folding>
                 <element signature="e#125#134#0" expanded="true" />
+=======
+            <state relative-caret-position="170">
+              <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="80" />
+              <folding>
+                <element signature="e#125#134#0" expanded="true" />
+                <marker date="1538049446686" expanded="true" signature="2534:2781" ph="..." />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
               </folding>
             </state>
           </provider>
@@ -102,10 +111,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileTree.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="428">
               <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
               <folding>
                 <element signature="e#124#133#0" expanded="true" />
+=======
+            <state relative-caret-position="434">
+              <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+              <folding>
+                <element signature="e#124#133#0" expanded="true" />
+                <marker date="1538054685928" expanded="true" signature="410:1066" ph="..." />
+                <marker date="1538054685928" expanded="true" signature="1794:1925" ph="..." />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
               </folding>
             </state>
           </provider>
@@ -123,6 +141,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>tabulation</find>
+      <find>test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,7 +174,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Course" />
+=======
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,16 +286,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.116325185" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117803834" />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.025920874" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -325,20 +359,37 @@
     <entry file="file://$PROJECT_DIR$/../../Base Exemples/main1.py" />
     <entry file="file://$PROJECT_DIR$/TestLibraries.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-31">
           <caret line="98" selection-start-line="98" selection-end-line="103" selection-end-column="22" />
           <folding>
             <element signature="e#125#134#0" expanded="true" />
+=======
+        <state relative-caret-position="170">
+          <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="80" />
+          <folding>
+            <element signature="e#125#134#0" expanded="true" />
+            <marker date="1538049446686" expanded="true" signature="2534:2781" ph="..." />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FileTree.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="428">
           <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
           <folding>
             <element signature="e#124#133#0" expanded="true" />
+=======
+        <state relative-caret-position="434">
+          <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+          <folding>
+            <element signature="e#124#133#0" expanded="true" />
+            <marker date="1538054685928" expanded="true" signature="410:1066" ph="..." />
+            <marker date="1538054685928" expanded="true" signature="1794:1925" ph="..." />
+>>>>>>> ef625cd390af2163455dbb730cf31a87541fda60
           </folding>
         </state>
       </provider>
